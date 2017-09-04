@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace ProjectDMS
 {
-    public partial class Form1 : Form
+    public partial class FormMainMenu : Form
     {
-        public Form1()
+        public FormMainMenu()
         {
             InitializeComponent();
+        }
+
+        private void buttonExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

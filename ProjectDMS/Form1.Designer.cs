@@ -1,6 +1,6 @@
 ﻿namespace ProjectDMS
 {
-    partial class Form1
+    partial class FormMainMenu
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +28,72 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.labelTitle = new System.Windows.Forms.Label();
+            this.buttonNewGame = new System.Windows.Forms.Button();
+            this.buttonLoadGame = new System.Windows.Forms.Button();
+            this.buttonExit = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // labelTitle
+            // 
+            this.labelTitle.AutoSize = true;
+            this.labelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitle.Location = new System.Drawing.Point(109, 22);
+            this.labelTitle.Name = "labelTitle";
+            this.labelTitle.Size = new System.Drawing.Size(77, 37);
+            this.labelTitle.TabIndex = 0;
+            this.labelTitle.Text = "Title";
+            // 
+            // buttonNewGame
+            // 
+            this.buttonNewGame.Location = new System.Drawing.Point(81, 96);
+            this.buttonNewGame.Name = "buttonNewGame";
+            this.buttonNewGame.Size = new System.Drawing.Size(135, 30);
+            this.buttonNewGame.TabIndex = 1;
+            this.buttonNewGame.Text = "New Game";
+            this.buttonNewGame.UseVisualStyleBackColor = true;
+            // 
+            // buttonLoadGame
+            // 
+            this.buttonLoadGame.Location = new System.Drawing.Point(81, 132);
+            this.buttonLoadGame.Name = "buttonLoadGame";
+            this.buttonLoadGame.Size = new System.Drawing.Size(135, 30);
+            this.buttonLoadGame.TabIndex = 2;
+            this.buttonLoadGame.Text = "Load Game";
+            this.buttonLoadGame.UseVisualStyleBackColor = true;
+            // 
+            // buttonExit
+            // 
+            this.buttonExit.Location = new System.Drawing.Point(81, 168);
+            this.buttonExit.Name = "buttonExit";
+            this.buttonExit.Size = new System.Drawing.Size(135, 30);
+            this.buttonExit.TabIndex = 3;
+            this.buttonExit.Text = "Exit";
+            this.buttonExit.UseVisualStyleBackColor = true;
+            this.buttonExit.Click += new System.EventHandler(this.buttonExit_Click);
+            // 
+            // FormMainMenu
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.ClientSize = new System.Drawing.Size(302, 241);
+            this.Controls.Add(this.buttonExit);
+            this.Controls.Add(this.buttonLoadGame);
+            this.Controls.Add(this.buttonNewGame);
+            this.Controls.Add(this.labelTitle);
+            this.Name = "FormMainMenu";
+            this.Text = "Dungeon Management System";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label labelTitle;
+        private System.Windows.Forms.Button buttonNewGame;
+        private System.Windows.Forms.Button buttonLoadGame;
+        private System.Windows.Forms.Button buttonExit;
     }
 }
 
