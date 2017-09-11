@@ -38,7 +38,7 @@
             // 
             this.labelTitle.AutoSize = true;
             this.labelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTitle.Location = new System.Drawing.Point(109, 22);
+            this.labelTitle.Location = new System.Drawing.Point(110, 27);
             this.labelTitle.Name = "labelTitle";
             this.labelTitle.Size = new System.Drawing.Size(77, 37);
             this.labelTitle.TabIndex = 0;
@@ -52,6 +52,7 @@
             this.buttonNewGame.TabIndex = 1;
             this.buttonNewGame.Text = "New Game";
             this.buttonNewGame.UseVisualStyleBackColor = true;
+            this.buttonNewGame.Click += new System.EventHandler(this.buttonNewGame_Click);
             // 
             // buttonLoadGame
             // 

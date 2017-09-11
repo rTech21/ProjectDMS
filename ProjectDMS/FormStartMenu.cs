@@ -10,24 +10,17 @@ using System.Windows.Forms;
 
 namespace ProjectDMS
 {
-    public partial class FormMainMenu : Form
+    public partial class FormStartMenu : Form
     {
-        FormStartMenu startMenu = new FormStartMenu();
-
-        public FormMainMenu()
+        public FormStartMenu()
         {
             InitializeComponent();
         }
 
-        private void buttonExit_Click(object sender, EventArgs e)
+        private void buttonCancel_Click(object sender, EventArgs e)
         {
+            ProjectDMS.FormMainMenu.Enabled = true;
             this.Close();
-        }
-
-        private void buttonNewGame_Click(object sender, EventArgs e)
-        {
-            startMenu.Show();
-            this.Enabled = false;
         }
     }
 }
