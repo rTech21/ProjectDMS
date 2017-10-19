@@ -12,11 +12,17 @@ namespace ProjectDMS
 {
     public partial class FormMainMenu : Form
     {
-        FormStartMenu startMenu = new FormStartMenu();
 
-        public FormMainMenu()
+        FormMasterForm MasterForm;
+        FormStartMenu StartMenu;
+
+        public FormMainMenu(FormMasterForm mf)
         {
             InitializeComponent();
+            MasterForm = mf;
+
+            //Create an instance of the start menu form
+            StartMenu = new FormStartMenu(MasterForm, this);
         }
 
         private void buttonExit_Click(object sender, EventArgs e)
@@ -26,8 +32,9 @@ namespace ProjectDMS
 
         private void buttonNewGame_Click(object sender, EventArgs e)
         {
-            startMenu.Show();
-            this.Enabled = false;
+            this.Hide();
+            StartMenu.Show();            
         }
+
     }
 }

@@ -12,15 +12,35 @@ namespace ProjectDMS
 {
     public partial class FormStartMenu : Form
     {
-        public FormStartMenu()
+        FormMasterForm MasterForm;
+        FormMainMenu MainMenu;
+
+        public FormStartMenu(FormMasterForm mf, FormMainMenu fr)
         {
             InitializeComponent();
+            MasterForm = mf;
+            MainMenu = fr;
         }
 
         private void buttonCancel_Click(object sender, EventArgs e)
         {
-            ProjectDMS.FormMainMenu.Enabled = true;
-            this.Close();
+            this.Hide();
+            MainMenu.Show();
+        }
+
+        private void buttonStart_Click(object sender, EventArgs e)
+        {
+            //hide this form 
+            this.Hide();
+            
+            //check if player wants to be DM or not
+            if (checkBoxDM.Checked)
+                MasterForm.playerDMDecision(0);            
+            else
+                MasterForm.playerDMDecision(1);            
+
+            //show master form
+            MasterForm.Show();
         }
     }
 }

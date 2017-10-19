@@ -36,6 +36,9 @@
             // 
             // labelTitle
             // 
+            this.labelTitle.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.labelTitle.AutoSize = true;
             this.labelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelTitle.Location = new System.Drawing.Point(110, 27);
@@ -46,7 +49,10 @@
             // 
             // buttonNewGame
             // 
-            this.buttonNewGame.Location = new System.Drawing.Point(81, 96);
+            this.buttonNewGame.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonNewGame.Location = new System.Drawing.Point(82, 92);
             this.buttonNewGame.Name = "buttonNewGame";
             this.buttonNewGame.Size = new System.Drawing.Size(135, 30);
             this.buttonNewGame.TabIndex = 1;
@@ -56,7 +62,10 @@
             // 
             // buttonLoadGame
             // 
-            this.buttonLoadGame.Location = new System.Drawing.Point(81, 132);
+            this.buttonLoadGame.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonLoadGame.Location = new System.Drawing.Point(82, 128);
             this.buttonLoadGame.Name = "buttonLoadGame";
             this.buttonLoadGame.Size = new System.Drawing.Size(135, 30);
             this.buttonLoadGame.TabIndex = 2;
@@ -65,7 +74,10 @@
             // 
             // buttonExit
             // 
-            this.buttonExit.Location = new System.Drawing.Point(81, 168);
+            this.buttonExit.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonExit.Location = new System.Drawing.Point(82, 164);
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(135, 30);
             this.buttonExit.TabIndex = 3;
