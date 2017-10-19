@@ -77,6 +77,7 @@
             this.buttonExit.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonExit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.buttonExit.Location = new System.Drawing.Point(82, 164);
             this.buttonExit.Name = "buttonExit";
             this.buttonExit.Size = new System.Drawing.Size(135, 30);
@@ -87,8 +88,10 @@
             // 
             // FormMainMenu
             // 
+            this.AcceptButton = this.buttonNewGame;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.buttonExit;
             this.ClientSize = new System.Drawing.Size(302, 241);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.buttonLoadGame);

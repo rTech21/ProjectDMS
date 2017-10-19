@@ -27,7 +27,7 @@ namespace ProjectDMS
 
         private void buttonExit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void buttonNewGame_Click(object sender, EventArgs e)

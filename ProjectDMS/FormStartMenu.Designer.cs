@@ -83,8 +83,10 @@
             // 
             // FormStartMenu
             // 
+            this.AcceptButton = this.buttonStart;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.buttonCancel;
             this.ClientSize = new System.Drawing.Size(324, 261);
             this.Controls.Add(this.checkBoxDM);
             this.Controls.Add(this.buttonCancel);
@@ -93,6 +95,7 @@
             this.Controls.Add(this.labelPlayerName);
             this.Name = "FormStartMenu";
             this.Text = "Dungeon Management System";
+            this.Load += new System.EventHandler(this.FormStartMenu_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -12,7 +12,12 @@ namespace ProjectDMS
 {
     public partial class FormMasterForm : Form
     {
+        //variables
         FormMainMenu MainMenuForm;
+        //string to hold the DM's username
+        string DMName;
+        //Creates an array to store the player names
+        string[] PlayerNames = new string[8];
 
         public FormMasterForm()
         {
@@ -40,20 +45,26 @@ namespace ProjectDMS
             MainMenuForm.Show();
         }
 
-        //determines if the player should see the DM or player interface
-        public void playerDMDecision(int DM)
+        //sets up either the player or DM interface depending on the player's selection in the start menu
+        public void playerDMDecision(int DM, string name)
         {
             switch (DM)
             {
                 case 0:
                     groupBoxDM.Show();
                     groupBoxPlayer.Hide();
+                    DMName = name;
                     break;
                 case 1:
                     groupBoxDM.Hide();
                     groupBoxPlayer.Show();
+                    dungeonMasterToolStripMenuItem.Visible = false;
+                    PlayerNames[0] = name;
                     break;
             }
+            //changes the text of the userName tool tip to the user's username
+            userNameToolStripMenuItem.Text = name;
+
         }
     }
 }
